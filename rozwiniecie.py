@@ -44,14 +44,14 @@ def generate_obstacles(max_x, max_y, num_obstacles):
 def generate_goal(max_x, max_y):
     x = max_x // 2
     y = max_y // 10
-    return (y, x, "X", Colors.GREEN)
+    return (y, x, "🏙️", Colors.GREEN)
 
 def check_collision(y, x, obstacles):
     return (y, x) in [(o[0], o[1]) for o in obstacles]
 
 def rozwiniecie1(imie):
     clear_screen()
-    print(f'{Colors.BLUE}{imie}, znajdujesz się w Warszawie. Postaraj się przedostać do {Colors.GREEN}Gdańska{Colors.YELLOW}(X na mapie){Colors.BLUE} {Colors.RED}I UWAZAJ NA ඞ{Colors.END}\n')
+    print(f'{Colors.BLUE}{imie}, znajdujesz się w Warszawie. Postaraj się przedostać do {Colors.GREEN}Gdańska{Colors.YELLOW}(🏙️  na mapie){Colors.BLUE} {Colors.RED}I UWAZAJ NA ඞ{Colors.END}\n')
     time.sleep(5)
 
     y, x = 10, 20
